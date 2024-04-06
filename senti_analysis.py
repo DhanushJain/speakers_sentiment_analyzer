@@ -2,9 +2,9 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 load_dotenv()
-API_KEY = os.getenv("OPENAI_API_KEY")
+# API_KEY = os.getenv("OPENAI_API_KEY")
 def analyze_sentiment(text):
-    response = OpenAI(api_key="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").chat.completions.create(
+    response = OpenAI(api_key=OPENAI_API_KEY).chat.completions.create(
         model="gpt-3.5-turbo",
         messages = [
             {
