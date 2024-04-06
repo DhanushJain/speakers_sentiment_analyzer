@@ -60,8 +60,8 @@ from dotenv import load_dotenv
 from deepgram import DeepgramClient, PrerecordedOptions
 
 load_dotenv()
-API_KEY = os.getenv("DEEPGRAM_API_KEY")
-deepgram = DeepgramClient(api_key="40628bbe8b195fd017e2d592b4242ade10f1186d")
+# API_KEY = os.getenv("DEEPGRAM_API_KEY")
+deepgram = DeepgramClient(api_key=DEEPGRAM_API_KEY)
 
 TAG = 'SPEAKER '
 
